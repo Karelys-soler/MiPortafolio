@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+}
+
+body{
+    background: linear-gradient(90deg, #1BA778, #76B155, #5c9477, #1BA778 );
+    background-size: 300% 300%;
+    animation: color 20s ease-in-out infinite;
+    transition: .3s ease all;
+}
+
+body.dark{
+    background: linear-gradient(90deg, #082430, #233831, #233833, #082430);
+    background-size: 300% 300%;
+    animation: color 20s ease-in-out infinite;
+    transition: .3s ease all;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+h1{
+    font-family: 'Elsie';
+    src: url('./Fonts/Elsie-Regular.ttf');
+}
+
+h1::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+span::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+a::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+p::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+label::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+input::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+button::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+b::selection{
+    color: #082430;
+    background: #86EFAC;
+}
+
+img::selection{
+    background: #86EFAC;
+}
+
+p{
+    font-family: 'Poltawski Nowy';
+    src: url('./Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+
+a{
+    font-family: 'Poltawski Nowy';
+    src: url('./Fonts/PoltawskiNowy-Italic-VariableFont_wght.ttf');
+}
+
+
+
+/*------ Switch ------*/
+.switch{
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active{
+    background: orange;
+    color: #000;
+}
+
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 30px;
+    background: none;
+    color: #fff;
+}
+
+
+
+/*------ Form ------*/
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form__label {
+    display: block;
+    font-weight: 700;
+    color: #86EFAC;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form__group-input {
+    position: relative;
+}
+
+.form__input {
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border: 1px solid #86EFAC;
+    border-radius: 60px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.form__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.form__input-error {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.form__input-error-active {
+    display: block;
+}
+
+.form__validation-state {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.form__message,
+.form__group-btn-send {
+    grid-column: span 2;
+}
+
+.form__message {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 60px;
+    display: none;
+}
+
+.form__message-active {
+    display: block;
+}
+
+.form__group-btn-send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 20%;
+    border: 1px solid #86EFAC;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.form__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.form__message-success {
+    font-size: 15px;
+    margin-top: 40px;
+    color: #119200;
+    background: rgba(164, 163, 163, 0.2);
+    padding: 5px 15px;
+    border-radius: 40px;
+    display: none;
+    box-shadow: 3px 0px 30px #119200;
+}
+
+.form__message-success-active {
+    display: block;
+}
+
+/*--- Validation ---*/
+.form__group-correct .form__validation-state {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.form__group-incorrect .form__label{
+    color: #bb2929;
+}
+
+.form__group-incorrect .form__validation-state{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.form__group-incorrect .form__input{
+    border: 3px solid #bb2929;
+}
+

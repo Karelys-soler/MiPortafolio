@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./Images/logo1.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Elsie&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fe0cdfc88c.js" crossorigin="anonymous"></script>
+        <title>Contact | Karelys Soler</title>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <div class="w-100% flex flex-row justify-center items-center text-[15px] text-5xl font-medium mt-[35px] text-white sm:text-[17px] md:text-[18px] lg:text-[20px] ">
+            <nav class="space-x-[20px] sm:space-x-[30px] md:space-x-[40px] lg:space-x-[50px]">
+                <a class="focus:bg-white/10 focus:rounded-full focus:px-4 focus:py-1 sm:focus:px-6 sm:focus:py-1.5 md:focus:px-6 md:focus:py-1.5 lg:focus:px-6 lg:focus:py-1.5" href="./Work.html">Work</a>
+                <a class="focus:bg-white/10 focus:rounded-full focus:px-4 focus:py-1 sm:focus:px-6 sm:focus:py-1.5 md:focus:px-6 md:focus:py-1.5 lg:focus:px-6 lg:focus:py-1.5" href="./About.html">About</a>
+                <a class="focus:bg-white/10 focus:rounded-full focus:px-4 focus:py-1 bg-white/10 rounded-full px-4 py-1 sm:focus:px-6 sm:focus:py-1.5 sm:px-6 sm:py-1.5 md:focus:px-6 md:focus:py-1.5 md:px-6 md:py-1.5 lg:focus:px-6 lg:focus:py-1.5 lg:px-6 lg:py-1.5" href="#">Contact</a>
+                <button class="switch" id="switch">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+            </nav>
+        </div>
+
+        <!--Form-->
+        <h1 data-aos="fade-down" data-aos-duration="1000" class="relative flex flex-col justify-center items-center text-[120px] text-5xl font-medium text-green-300 leading-11 mt-[140px]">Contact me</h1>
+        <div class="relative flex flex-col justify-center items-center">
+            <p data-aos="fade-up" class="w-[700px] mt-[60px] text-center text-[22px] text-white">If you are interested in exploring my knowledge and skills I will be happy to talk with you. Please don't hesitate to use the form</p>
+        </div>
+        <section class="flex flex-col justify-center items-center h-[800px] w-100%">
+            <div data-aos="fade-up" class="bg-white/5 border border-green-300 w-[1220px] h-[630px] px-[150px] py-[70px] rounded-[60px]">
+
+        <main>
+            <form action="" class="form" id="form">
+                <!--Name Group-->
+                <div class="form__group" id="group__name">
+                    <label for="name" class="form__label">Name</label>
+                    <div class="form__group-input">
+                        <input type="text" class="form__input" name="name" id="name" placeholder="José">
+                        <i class="form__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input-error">The name can only contain letters.</p>
+                </div>
+
+                <!--Last Name Group-->
+                <div class="form__group" id="group__lastName">
+                    <label for="lastName" class="form__label">Last Name</label>
+                    <div class="form__group-input">
+                        <input type="text" class="form__input" name="lastName" id="lastName" placeholder="González">
+                        <i class="form__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input-error">The last name can only contain letters.</p>
+                </div>
+
+                <!--Email Group-->
+                <div class="form__group" id="group__email">
+                    <label for="email" class="form__label">Email</label>
+                    <div class="form__group-input">
+                        <input type="email" class="form__input" name="email" id="email" placeholder="jose@example.com">
+                        <i class="form__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input-error">The email can only contain letters, numbers, periods, hyphens and underscores.</p>
+                </div>
+
+                <!--Phone Number Group-->
+                <div class="form__group" id="group__number">
+                    <label for="number" class="form__label">Phone number</label>
+                    <div class="form__group-input">
+                        <input type="text" class="form__input" name="number" id="number" placeholder="4491234567">
+                        <i class="form__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input-error">The phone number can only contain numbers and the maximum is 14 digits.</p>
+                </div>
+
+                <!--Address Group-->
+                <div class="form__group" id="group__address">
+                    <label for="address" class="form__label">Address</label>
+                    <div class="form__group-input">
+                        <input type="text" class="form__input" name="address" id="address" placeholder="Av. Example 1010, Distrito Capital.">
+                        <i class="form__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input-error">The address can only contain letters, spaces, numbers and periods.</p>
+                </div>
+
+                <!--Message-->
+                <div class="form__group" id="group__message">
+                    <label for="message" class="form__label">Message</label>
+                    <div class="form__group-input">
+                        <input type="text" class="form__input" name="message" id="message" placeholder="Ask me a question">
+                        <i class="form__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input-error">Please write correctly.</p>
+                </div>
+
+                <!--Error-->
+                <div class="form__message" id="form__message">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Please fill in the form correctly.</p>
+                </div>
+                
+                <div class="form__group form__group-btn-send" id="send">
+                    <button type="submit" class="form__btn">Send</button>
+                    <p class="form__message-success" id="form__message-success">Form sent successfully!</p>
+                </div>
+            </form>
+        </main>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="grid grid-cols-2 h-[580px] w-100%">
+
+            <!--Column 1-->
+            <div class="relative grid grid-col justify-center items-center">
+                <!--Clock-->
+                <p class="ml-[210px] mb-[20px] text-green-300 pt-[30px] pl-[90px] font-semibold tracking-widest bg-white/10 w-[450px] h-[80px] rounded-full" id="Clock"></p>
+                <img class="absolute w-[48px] mt-[257px] ml-[233px]" src="./Images/clock.png" alt="Clock">
+                <!--Date-->
+                <p class="absolute mt-[356px] ml-[240px] text-white text-[18px]">2023</p>
+                <p class="absolute mt-[353px] ml-[290px] text-green-300 text-[25px]">•</p>
+                <!--About-->
+                <a class="absolute mt-[356px] ml-[307px] text-white text-[18px] hover:text-green-300" href="./About.html">Karelys Soler</a>
+            </div>
+
+            <!--Column 2-->
+            <div class="grid grid-cols-3 justify-center items-center mt-[80px] ml-[90px] mr-[160px] leading-[50px]">
+                <!--Elsewhere-->
+                <div>
+                    <h1 class="text-[20px] font-semibold tracking-wider text-green-300">Elsewhere</h1>
+                    <div class="grid grid-row text-white tracking-widest">
+                        <a class="hover:text-green-300" href="https://github.com/Karelys-soler">Github</a>
+                        <a class="hover:text-green-300" href="https://www.linkedin.com/in/karelys-soler-212a95211/">Linkedin</a>
+                        <a class="hover:text-green-300" href=""><Read class="cv">CV</Read></a>
+                    </div>
+                </div>
+                <!--Work-->
+                <div class="mb-[100px]">
+                    <h1 class="text-[20px] font-semibold tracking-wider text-green-300 ">Work</h1>
+                    <a class="text-white hover:text-green-300 tracking-widest" href="./Work.html">Projects</a>
+                </div>
+                <!--Contact-->
+                <div class="mb-[100px]">
+                    <h1 class="text-[20px] font-semibold tracking-wider text-green-300">Contact</h1>
+                    <a class="text-white hover:text-green-300 tracking-widest" href="./Contact.html">Form</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./Clock.js"></script>
+        <script src="./Form.js"></script>
+        <script src="./Dark_mode.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

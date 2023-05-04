@@ -1,0 +1,50 @@
+Elabora un portafolio (Web Site) que contenga informacion sobre ti, Tus habilidades blandas, Las herramientas y lenguajes aprendidos, e informacion de contacto.
+Esta web debe ser responsive y estar ONLINE en GitHub Pages o el hosting de tu preferencia.
+*Opcional: tener la opcion de cambiar entre temas claro y oscuro.
+
+El index debe contener:
+    - Menu / navbar
+    - Titulo: Nombre y Apellido
+    - Subtitulo: Bienvenida a la web
+    - Seccion de microbiografia (minimo 50 palabras).
+    - Footer: anclas a las demas paginas y Reloj (Solo en el index el reloj puede estar en el footer o donde consideres que quede bien segun tu diseño).
+
+
+La pagina de Trabajos realizados debe contener:
+    - Menu / navbar
+    - descripcion de la pagina actual
+     -Secciones: 
+              1 - Lenguajes Aprendidos (*Opcional agregar animaciones).
+              2 - Herramientas Aprendidas (*Opcional agregar animaciones).
+              3 - Trabajos Realizados: una de las siguientes 2 opciones...
+	Opcion 1: Img y Ancla del mismo proyecto ONLINE en GitHub Pages.
+	Opcion 2: Agrega un menu (con anclas) de proyectos realizados y crea una pagina por cada proyecto la cual puedas ingresar desde el menu previamente mencionado.
+    - Footer (Reloj, anclas a las demas paginas principales: Inicio, Contacto)
+
+
+La pagina de contacto debe contener:
+    - Menu / navbar
+    - Titulo: Nombre y Apellido
+    - Subtitulo (descripcion de la pagina actual) 
+    - Formulario
+        los campos deben ser: Nombre, Apellido, email, telefono, direccion, asunto.
+        Los campos que deben tener expresiones regulares son: Nombre, Apellido, Email, Telefono.
+        *Opcional: El boton de Enviar el Formulario debe tener un evento que cambie el color de fondo 
+        y el texto del mismo boton diciendo: Mensaje enviado!
+    - Footer (Reloj, anclas a las demas paginas)
+
+
+
+    Requisitos: 
+    1- HTML
+    2- Pueden utilizar CSS, SASS, Tailwind.
+    3- JavaScript
+    
+   *Opcional: 
+          Agrega animaciones con la Libreria de animacion al hacer Scroll AOS: https://michalsnik.github.io/aos/ O la libreria de animaciones Animate.css: https://animate.style/
+
+
+Consejo: Ingresen a asesoria. 😎
+
+Tiempo de entrega: 05/05/2023 
+En caso de ser necesario se extendera hasta el 09/05/23
