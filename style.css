@@ -270,3 +270,17 @@ a{
     border: 3px solid #bb2929;
 }
 
+@media screen and (max-width: 800px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form__message,
+    .form__group-btn-send {
+        grid-column: span 1;
+    }
+
+    .form__btn {
+        width: 100%;
+    }
+}
